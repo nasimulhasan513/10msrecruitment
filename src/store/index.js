@@ -36,9 +36,9 @@ export default createStore({
   },
   actions: {
     async INIT_USER({ commit }) {
-      let user = localStorage.getItem("ruser");
+      let user = JSON.parse(localStorage.getItem("ruser"));
       if (user) {
-        commit("SET_USER", JSON.parse(user));
+        commit("SET_USER", user);
 
         const res = await fetch(
           `https://script.google.com/macros/s/AKfycbyvIX3K7AJ6SBe8rYIm3JorRDGIPq7kjARWLG0VU8Op1nVL9cOAFkbUvgNcYskbcaaO/exec?type=applications&contact=${user.contact}`
