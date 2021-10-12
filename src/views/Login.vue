@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container mx-auto mt-10">
-      <div class="p-3 mx-auto rounded bg-secondary md:w-1/2 lg:w-1/3">
+      <div class="p-3 mx-auto rounded md:w-1/2 lg:w-1/3">
         <vee-form :validation-schema="schema" @submit="login">
           <div>
             <label class="">Phone Number</label>
@@ -9,20 +9,7 @@
               <vee-field
                 type="tel"
                 name="contact"
-                class="
-                  w-full
-                  px-3
-                  py-3
-                  text-gray-800
-                  placeholder-gray-500
-                  transition
-                  duration-500
-                  border border-gray-200
-                  rounded-md
-                  focus:outline-none
-                  text-bold
-                  focus:border-black
-                "
+                class="w-full px-3 py-3 text-gray-800 placeholder-gray-500 transition duration-500 border border-gray-200 rounded-md  focus:outline-none text-bold focus:border-black"
                 placeholder="E.g. 01XXXXXXXXXX"
               />
               <span class="absolute material-icons right-2"> call </span>
@@ -36,15 +23,7 @@
           <div class="mt-5 text-center">
             <button
               :disabled="loading"
-              class="
-                inline-block
-                px-6
-                py-3
-                text-white
-                rounded
-                shadow-sm
-                bg-success
-              "
+              class="inline-block px-6 py-3 text-white rounded shadow-sm  bg-success"
             >
               {{ loading ? "Please wait..." : "Login" }}
             </button>
