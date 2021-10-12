@@ -1,0 +1,37 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-primary{
+  @apply bg-gradient-to-tr hover:from-gray-500 hover:to-gray-700 from-green-400 to-green-500
+}
+.input-block{
+  @apply w-full px-3 py-3 font-medium text-gray-800 placeholder-gray-500 transition duration-500 border border-gray-200 rounded-md focus:outline-none focus:border-black;
+}
+#nprogress .bar {
+  background: #f30337 !important;
+  width: 8px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ff0000, 0 0 5px #ff3300;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #ff004c;
+  border-left-color: #ff002b;
+}
+.content-container {
+  min-height: calc(100vh - 170px);
+}
+
+.kalpurush {
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+}
