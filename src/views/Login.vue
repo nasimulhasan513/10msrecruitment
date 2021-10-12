@@ -23,7 +23,7 @@
                   text-bold
                   focus:border-black
                 "
-                placeholder="E.g. 01646915232"
+                placeholder="E.g. 01XXXXXXXXXX"
               />
               <span class="absolute material-icons right-2"> call </span>
             </div>
